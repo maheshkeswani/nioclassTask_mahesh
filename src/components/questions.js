@@ -24,7 +24,7 @@ const Questions = (props) => {
     <>
       {err === "" ? (
           <MathJax>
-            <h3>{question}</h3>
+            {question}
           </MathJax>
       ) : (
         <h3>Something Went Wrong</h3>
