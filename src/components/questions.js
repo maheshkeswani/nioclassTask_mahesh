@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { MathJaxContext, MathJax } from "better-react-mathjax";
+import { MathJax } from "better-react-mathjax";
 
 const Questions = (props) => {
   let query = props.query;
@@ -23,11 +23,9 @@ const Questions = (props) => {
   return (
     <>
       {err === "" ? (
-        <MathJaxContext>
           <MathJax>
             <h3>{question}</h3>
           </MathJax>
-        </MathJaxContext>
       ) : (
         <h3>Something Went Wrong</h3>
       )}
