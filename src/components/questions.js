@@ -20,6 +20,10 @@ const Questions = (props) => {
     fetchData();
     // eslint-disable-next-line
   }, [query]);
+  	useEffect(() => {
+		if (typeof window?.MathJax !== 'undefined') {
+			window.MathJax.typesetPromise();
+		}})
   return (
     <>
       {err === "" ? (
