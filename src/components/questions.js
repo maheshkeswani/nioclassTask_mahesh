@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { MathJax } from "better-react-mathjax";
-
+import "../fonts/MathJax_Main-Regular.woff";
 const Questions = (props) => {
   let query = props.query;
   const [question, setQuestion] = useState("");
